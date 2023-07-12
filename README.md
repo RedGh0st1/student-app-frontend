@@ -1,4 +1,4 @@
-#TODOs
+# TODOs
 
 Create a frontend React repo for our project
 
@@ -10,7 +10,7 @@ Break the list of students into React components
 
 Style list
 
-#QUESTIONS
+# QUESTIONS
 
 Backend
 
