@@ -1,4 +1,4 @@
-#TODOs
+# TODOs
 
 Create a frontend React repo for our project
 
@@ -10,7 +10,7 @@ Break the list of students into React components
 
 Style list
 
-#QUESTIONS
+# QUESTIONS
 
 Backend
 
@@ -25,3 +25,13 @@ What tools will we use to build the frontend?
 When does useEffect fire or not fire? What does an empty dependency array do?
 
 Can you further explain the difference or benefits of using scss instead of css?
+
+# THINGS TO DISCUSS
+
+What causes a REact component to rerender?
+
+    1. The component's parent renders again
+
+    2. The component's props change
+
+    3. The component's state changes
