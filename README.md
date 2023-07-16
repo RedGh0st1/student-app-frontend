@@ -25,3 +25,18 @@ What tools will we use to build the frontend?
 When does useEffect fire or not fire? What does an empty dependency array do?
 
 Can you further explain the difference or benefits of using scss instead of css?
+
+1. If you want your React component to dispaly something diferent, what do you need to do?
+2. what are 3 things that cause a component to rerender?
+3. when does the useffect()callback fire?
+4. when is the useEffect() callback guaranteed to fire?
+
+# THINGS TO DISCUSS
+
+What causes a REact component to rerender?
+
+    1. The component's parent renders again
+
+    2. The component's props change
+
+    3. The component's state changes
