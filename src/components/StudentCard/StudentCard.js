@@ -1,3 +1,5 @@
+import "../StudentCard/StudentCard.css"
+
 export default function StudentCard({ student }) {
   const { id, company, firstName, lastName, email, pic, grades, skill } =
     student
@@ -20,23 +22,27 @@ export default function StudentCard({ student }) {
   // Rendered the average
 
   return (
-    <div className="studentlist" key={id}>
-      <img src={pic} alt={`${firstName} ${lastName}`} />
-      <h2>
-        {firstName} {lastName}
-      </h2>
-      <ul>
-        <li className="studentlist__email">Email: {email}</li>
-        <li className="studentlist__company">Company: {company}</li>
-        <li className="studentlist__skill">Skill: {skill}</li>
-        <li className="studentlist__average">
-          Average:{" "}
-          {grades.reduce((acc, curr) => {
-            return acc + parseInt(curr)
-          }, 0) / grades.length}
-          %
-        </li>
-      </ul>
+    <div className="StudentCard" key={id}>
+      <div className="StudentCard__avatar">
+        <img src={pic} alt={`${firstName} ${lastName}`} />
+      </div>
+      <div className="StudentCard__info">
+        <h2>
+          {firstName} {lastName}
+        </h2>
+        <ul>
+          <li className="studentlist__email">Email: {email}</li>
+          <li className="studentlist__company">Company: {company}</li>
+          <li className="studentlist__skill">Skill: {skill}</li>
+          <li className="studentlist__average">
+            Average:{" "}
+            {grades.reduce((acc, curr) => {
+              return acc + parseInt(curr)
+            }, 0) / grades.length}
+            %
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }

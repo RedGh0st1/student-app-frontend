@@ -1,0 +1,39 @@
+.StudentCard {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+/* .StudentCard div { */
+/* border: 3px dotted rgb(189, 244, 8); */
+/* } */
+
+.StudentCard__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.StudentCard__avatar img {
+  width: 100px;
+  /* height: 90px; */
+  border-radius: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.StudentCard__info h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.StudentCard__info ul {
+  padding-inline-start: 16px;
+  color: #777;
+}
+.StudentCard__info li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
