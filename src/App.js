@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import "./App.css"
 
-import StudentList from "./components/StudentList"
+import StudentList from "./components/StudentList/StudentList"
 
 // TODO: Get this value from .env
 const API_URL = "http://localhost:9000"
@@ -22,11 +22,11 @@ function App() {
     fetchData()
   }, [])
 
-  console.log("<App /> rendered!")
+  console.log(`<App /> rendered! num students = ${studentData.length}`)
   return (
     <div className="App">
-      <h1>Hello World!!!3</h1>
-      <StudentList />
+      <h1>Student List</h1>
+      <StudentList studentData={studentData} />
     </div>
   )
 }
