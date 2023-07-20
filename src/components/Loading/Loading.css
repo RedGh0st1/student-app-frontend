@@ -1,0 +1,11 @@
+.Loading {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px dashed purple;
+  width: 60vw;
+  height: 80vh;
+  border-radius: 5px;
+  background-color: white;
+}

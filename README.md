@@ -1,4 +1,11 @@
-# TODOs
+#### TODOS 2023-07-19
+
+Style the student list
+Handle loading state
+Handle error state
+Refractor with a layout component
+
+#### TODOS
 
 Create a frontend React repo for our project
 
@@ -10,7 +17,7 @@ Break the list of students into React components
 
 Style list
 
-# QUESTIONS
+#### QUESTIONS
 
 Backend
 
@@ -31,12 +38,16 @@ Can you further explain the difference or benefits of using scss instead of css?
 3. when does the useffect()callback fire?
 4. when is the useEffect() callback guaranteed to fire?
 
-# THINGS TO DISCUSS
+#### THINGS TO DISCUSS
 
-What causes a REact component to rerender?
+What causes a React component to rerender?
+if you want to see something different, the componenet must re-render
 
     1. The component's parent renders again
 
     2. The component's props change
 
     3. The component's state changes
+    (4. Conext changes)
+
+    What are the benefits of scss over css?
