@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./App.css"
-
+import Loading from "./components/Loading/Loading"
 import StudentList from "./components/StudentList/StudentList"
 
 // TODO: Get this value from .env
@@ -32,11 +32,12 @@ function App() {
   )
   return (
     <div className="App">
-      {/* If loading, render <loading /> else render <StudentList />*/}
-      {loading ? <Loading />
       <h1>Student List</h1>
-      <StudentList studentData={studentData} />
-      : null}
+      {/* If loading, render <loading /> else render <StudentList />*/}
+      {/* if we want to render either someting or nothing */}
+      {/* { loading && <Loading />} */}
+      {/*if we wnat o render either a or b  */}
+      {loading ? <Loading /> : <StudentList studentData={studentData} />}
     </div>
   )
 }
