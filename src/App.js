@@ -3,6 +3,7 @@ import "./App.css"
 import Loading from "./components/Loading/Loading"
 import StudentList from "./components/StudentList/StudentList"
 import Error from "./components/Error/Error"
+import Container from "./components/Container/Container"
 
 // TODO: Get this value from .env
 const API_URL = "http://localhost:9000"
@@ -58,10 +59,9 @@ function App() {
   return (
     <div className="App">
       <h1>Student List</h1>
-      {/* If loading, render <loading /> else if error, render <Error error={error} /> 
-    else render <StudentList />  */}
-      {renderContent()}
-      {loading ? <Loading /> : <StudentList studentData={studentData} />}
+      <Container center={Boolean(error || loading)}>
+        {renderContent()}
+      </Container>
     </div>
   )
 }
