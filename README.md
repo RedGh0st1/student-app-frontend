@@ -51,3 +51,15 @@ if you want to see something different, the componenet must re-render
     (4. Conext changes)
 
     What are the benefits of scss over css?
+
+# ## Goals 8/06/23
+
+1. Filter list by input
+2. Hanlde no results situation
+3. Input styling and any other styling
+
+# Steps
+
+1. X Create e,pty `<Container /> component John `
+2. X Render `<Conainter /> with children Samnatha`
+3. X Move exitisng position css from `<StudentList /> and <Loading /> inot <Container /> Juhao`
