@@ -3,12 +3,14 @@ import StudentCard from "../StudentCard/StudentCard"
 import "../StudentList/StudentList.css"
 
 export default function StudentList({ studentData }) {
+  console.log(`<studentlist /> rendered!`)
   //  When I type in the input, i should see filtered results by name
-  const [searchInput, setSearchInput] = useState(" ")
+  const [searchInput, setSearchInput] = useState("")
 
   const handleChange = (e) => {
     setSearchInput(e.target.value)
   }
+
   // body of function - filter data here
   //  create a var to hold the filter data
   let dataToDisplay = studentData
@@ -33,7 +35,7 @@ export default function StudentList({ studentData }) {
     if (dataToDisplay.length === 0) {
       contentClassName += " StudentList__content--center"
       return (
-        <div className={contentClassName}>No results for ${searchInput}</div>
+        <div className={contentClassName}>No results for {searchInput}</div>
       )
     } else {
       return (
@@ -56,9 +58,8 @@ export default function StudentList({ studentData }) {
           placeholder="Search by name"
           onChange={handleChange}
         />
-      </div>{" "}
-      <br />
-      <div>{renderContent()}</div>
+      </div>
+      {renderContent()}
     </div>
   )
 }
