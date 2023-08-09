@@ -7,19 +7,19 @@ export default function StudentCard({ student }) {
     student
 
   // Converted the grades to numbers
-  const numericGrades = grades.map((grade) => Number(grade))
+  // const numericGrades = grades.map((grade) => Number(grade))
 
   // Calculated the average
   //Add up all the grades
 
-  let total = 0
+  // let total = 0
   // Loop through the grades
-  for (const grade of numericGrades) {
-    total += grade
-  }
+  // for (const grade of numericGrades) {
+  // total += grade
+  // }
 
   //Divide total by number of grades and assign to a var
-  const average = total / numericGrades.length
+  // const average = total / numericGrades.length
 
   // Rendered the average
   console.log(`<StudentCard /> rendered name=${firstName} expanded=${expanded}`)
