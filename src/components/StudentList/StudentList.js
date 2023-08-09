@@ -28,7 +28,9 @@ export default function StudentList({ studentData }) {
       return fullName.includes(searchInput.toLowerCase())
     })
   }
+
   //  if dataToDisplay.length === 0, show "no results for {searchInput}" Else: renter students cards
+  // not the same RENDERCONTENT
   const renderContent = () => {
     let contentClassName = "StudentList__content"
 
