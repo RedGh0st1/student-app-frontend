@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "../StudentCard/StudentCard.css"
+import { FaMinus, FaPlus } from "react-icons/fa"
 
 export default function StudentCard({ student }) {
   const [expanded, setExpanded] = useState(false)
@@ -49,12 +50,21 @@ export default function StudentCard({ student }) {
             <ul>
               {grades.map((grade, index) => (
                 <li key={`${grade}-${index}`}>
-                  Test {index + 1} {grade}%
+                  <span>Test {index + 1}</span> <span>{grade}%</span>
                 </li>
               ))}
             </ul>
           </div>
         )}
+      </div>
+      <div className="StudentCard__controls">
+        <button
+          onClick={() => {
+            setExpanded(!expanded)
+          }}
+        >
+          {expanded ? <FaMinus /> : <FaPlus />}
+        </button>
       </div>
     </div>
   )
