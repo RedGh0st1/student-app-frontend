@@ -1,9 +1,7 @@
-import { useState } from "react"
 import "../StudentCard/StudentCard.css"
 import { FaMinus, FaPlus } from "react-icons/fa"
 
-export default function StudentCard({ student }) {
-  const [expanded, setExpanded] = useState(false)
+export default function StudentCard({ student, expanded, onClick }) {
   const { id, company, firstName, lastName, email, pic, grades, skill } =
     student
 
@@ -58,13 +56,7 @@ export default function StudentCard({ student }) {
         )}
       </div>
       <div className="StudentCard__controls">
-        <button
-          onClick={() => {
-            setExpanded(!expanded)
-          }}
-        >
-          {expanded ? <FaMinus /> : <FaPlus />}
-        </button>
+        <button onClick={onClick}>{expanded ? <FaMinus /> : <FaPlus />}</button>
       </div>
     </div>
   )

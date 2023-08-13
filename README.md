@@ -63,3 +63,19 @@ if you want to see something different, the componenet must re-render
 1. X Create e,pty `<Container /> component John `
 2. X Render `<Conainter /> with children Samnatha`
 3. X Move exitisng position css from `<StudentList /> and <Loading /> inot <Container /> Juhao`
+
+Lifting state up: preview
+
+##Goals
+
+1. fix the bug where we forget a cards expaneded state
+2. Build Expand All/ Collapse All buttons
+
+## Steps to reproduce bug
+
+1. Expand Ingaberg's grades
+2. Search for "cl"
+3. Ingaberg caed is removed from results
+4. Delete search term so that Ingaberg is shown in results.
+5. **Expected** Ingaberg card is still expanded
+6. **Actual** Ingaberg's card is collapsed

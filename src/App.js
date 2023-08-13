@@ -59,11 +59,10 @@ function App() {
   return (
     <div className="App">
       <h1>Student List</h1>
-      <Container center={Boolean(error || loading)}>
+      <Container center={Boolean(error || loading)} scroll={false}>
         {renderContent()}
       </Container>
     </div>
   )
 }
-
 export default App
