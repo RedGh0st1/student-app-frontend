@@ -6,7 +6,7 @@ import Error from "./components/Error/Error"
 import Container from "./components/Container/Container"
 
 // TODO: Get this value from .env
-const API_URL = "http://localhost:9000"
+const API_URL = process.env.REACT_APP_API_URL
 
 function App() {
   const [studentData, setStudentData] = useState([])
