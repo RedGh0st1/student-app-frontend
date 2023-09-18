@@ -21,7 +21,7 @@ function App() {
         // You can await here
         setLoading(true)
         // Show the user that we're loading
-        const response = await fetch(`${API_URL}/students`)
+        const response = await fetch(`${API_URL}/v2/students`)
         const json = await response.json()
         console.log("<App /> useEffect() fetched data", json)
         const { data, error } = json
